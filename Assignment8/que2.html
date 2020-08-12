@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("enter the number");
+        let a=1208;
+        number=a;
+       
+        l=[];
+      for(i=0;i<4;i++)
+      {
+          r=a%10;
+          l.push(r);
+          a=parseInt(a/10);
+
+      }
+      l=l.reverse();
+      console.log("Face value from unit place to 4th digit place");
+      console.log(l);
+      console.log("Place value from unit place to 4th digit place");
+      m=[]
+      for(i=0;i<4;i++)
+      {
+          
+          m.push(l[i]*(10**(3-i)));
+
+      }
+      console.log(m)
+      console.log(`${number}=${m[0]}+${m[1]}+${m[2]}+${m[3]}`);
+      console.log("Reversing the number");
+      rev=l.reverse();
+    let sum=0;
+   for(i=0;i<4;i++)
+   {
+      
+       sum=sum+rev[i]*(10**(3-i));
+   }
+   let revnum=sum;
+   console.log(revnum);
+   
+
+
+     
+     
+      
+      
+      
+
+
+        
+
+    </script>
+    
+</body>
+</html>
